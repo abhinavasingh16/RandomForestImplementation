@@ -9,3 +9,6 @@ class Node:
 		self.rchild = rc
 		self.label = lbl
 		self.split_rule = (None,None)
+
+	def __repr__(self):
+		return "label: {0}.\nThe rules are: {1}".format(self.label,self.split_rule)
